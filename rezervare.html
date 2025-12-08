@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Formular de rezervare — CityScape Artists</title>
+
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+		crossorigin="anonymous" />
+
+
+	<link rel="stylesheet" href="main.css" />
+
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+	<link rel="icon" href="css/img/CityScapeArtists_logo_embedded-svg.svg" type="image/svg+xml">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg navbar-dark shadow-sm navbar-csa">
+		<div class="container align-items-center">
+			<!-- Brand -->
+			<a class="navbar-brand d-flex align-items-center gap-3" href="index.html">
+				<img src="css/img/CityScapeArtists_logo_embedded-svg.svg" alt="CityScapeArtists" height="38" />
+				<span class="brand-text d-none d-md-inline">
+					CityScape
+					<span>Artists</span>
+				</span>
+			</a>
+
+			<!-- Hamburger -->
+			<button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarNavCsa" aria-controls="navbarNavCsa" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<!-- Links + Social -->
+			<div class="collapse navbar-collapse" id="navbarNavCsa">
+				<ul class="navbar-nav mx-auto nav-main">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Acasă</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="about.html">Despre noi</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="testimoniale.html">Testimoniale</a>
+					</li>
+				</ul>
+
+				<ul class="navbar-nav navbar-social ms-lg-3">
+					<li class="nav-item">
+						<a href="https://www.facebook.com/CityScapeArtists" target="_blank" class="nav-link">
+							<i class="fab fa-facebook-f"></i>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="https://www.instagram.com/CityScapeArtists" target="_blank" class="nav-link">
+							<i class="fab fa-instagram"></i>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="https://www.youtube.com/CityScapeArtists" target="_blank" class="nav-link">
+							<i class="fab fa-youtube"></i>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="https://www.tiktok.com/CityScapeArtists" target="_blank" class="nav-link">
+							<i class="fab fa-tiktok"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!--Formular-->
+	<section class="py-5" id="rezervare">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-12 col-md-10 col-lg-8 col-xxl-6">
+					<div class="card shadow-lg border-0 rounded-4">
+						<div class="card-body p-4 p-md-5">
+							<h1 class="h3 text-center mb-2">Rezervă-ți city break-ul</h1>
+							<p class="text-center mb-4">
+								Completează detaliile de mai jos, iar un consultant CityScape Artists te va contacta
+								pentru confirmare.
+							</p>
+
+							<form>
+
+								<div class="row g-3">
+									<!-- Nume + Email -->
+									<div class="col-md-6">
+										<label for="nume" class="form-label">Nume complet</label>
+										<input type="text" class="form-control" id="nume" required>
+									</div>
+									<div class="col-md-6">
+										<label for="email" class="form-label">Email</label>
+										<input type="email" class="form-control" id="email" required>
+									</div>
+
+									<!-- Telefon + Destinație -->
+									<div class="col-md-6">
+										<label for="telefon" class="form-label">Telefon</label>
+										<input type="tel" class="form-control" id="telefon">
+									</div>
+									<div class="col-md-6">
+										<label for="destinatie" class="form-label">Destinație</label>
+										<select class="form-select" id="destinatie" required>
+											<option selected disabled>Alege orașul</option>
+											<option>Roma</option>
+											<option>Barcelona</option>
+											<option>Londra</option>
+											<option>Amsterdam</option>
+											<option>Viena</option>
+											<option>Praga</option>
+										</select>
+									</div>
+
+									<!-- Număr persoane + Zile -->
+									<div class="col-md-6">
+										<label for="persoane" class="form-label">Număr persoane</label>
+										<input type="number" class="form-control" id="persoane" min="1" max="6"
+											value="2" required>
+									</div>
+									<div class="col-md-6">
+										<label for="zile" class="form-label">Număr zile</label>
+										<input type="number" class="form-control" id="zile" min="2" max="6" value="3"
+											required>
+									</div>
+
+									<!-- Date plecare / întoarcere -->
+									<div class="col-md-6">
+										<label for="plecare" class="form-label">Data plecării</label>
+										<input type="date" class="form-control" id="plecare" required>
+									</div>
+									<div class="col-md-6">
+										<label for="intoarcere" class="form-label">Data întoarcerii</label>
+										<input type="date" class="form-control" id="intoarcere" required>
+									</div>
+									<!-- Buget -->
+									<div class="col-md-6">
+										<label for="buget" class="form-label">Buget aproximativ/persoană (EUR)</label>
+										<input type="number" class="form-control" id="buget" min="500">
+									</div>
+
+									<!-- Tip experiență -->
+									<div class="col-md-6">
+										<label for="tip" class="form-label">Tip experiență dorită</label>
+										<select class="form-select" id="tip">
+											<option selected>Relaxare & chill</option>
+											<option>Cultural & muzee</option>
+											<option>Foodie & gastronomie</option>
+											<option>Nightlife & distracție</option>
+											<option>Mix echilibrat</option>
+										</select>
+									</div>
+
+									<!-- Mesaj -->
+									<div class="col-12">
+										<label for="mesaj" class="form-label">Preferințe & detalii (opțional)</label>
+										<textarea class="form-control" id="mesaj" rows="3"
+											placeholder="Spune-ne ce îți dorești de la această escapadă..."></textarea>
+									</div>
+
+									<!-- GDPR -->
+									<div class="col-12">
+										<div class="form-check small">
+											<input class="form-check-input" type="checkbox" value="" id="acord"
+												required>
+											<label class="form-check-label" for="acord">
+												Sunt de acord cu prelucrarea datelor pentru a fi contactat în vederea
+												rezervării.
+											</label>
+										</div>
+									</div>
+
+									<!-- Submit -->
+									<div class="col-12 mt-2">
+										<button type="submit" class="btn btn-primary w-100 py-2">
+											Trimite cererea de rezervare
+										</button>
+										<p class="small text-muted text-center mt-2 mb-0">
+											Nu se face nicio plată online în acest pas — este doar o cerere de ofertă.
+										</p>
+									</div>
+								</div>
+
+							</form>
+
+						</div>
+					</div>
+				</div>
+			</div>
+	</section>
+	<!-- FEREASTRĂ MODALĂ REZERVARE TRIMISĂ -->
+<div class="modal fade" id="rezervareSucces" tabindex="-1" aria-labelledby="rezervareSuccesLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content luxury-modal">
+			
+			<div class="modal-header border-0 justify-content-center">
+				<div class="luxury-icon-wrap">
+					<i class="fas fa-check luxury-icon"></i>
+				</div>
+			</div>
+
+			<div class="modal-body text-center px-4 pb-4">
+				<h5 class="luxury-title" id="rezervareSuccesLabel">
+					Rezervarea ta a fost trimisă
+				</h5>
+
+				<p class="luxury-text-main">
+					Un consultant CityScape Artists te va contacta în cel mai scurt timp pentru confirmarea rezervării și pentru a-ți contura o experiență personalizată în orașul ales.
+				</p>
+			</div>
+			<div class="modal-footer border-0 justify-content-center pb-4">
+				<button type="button" class="btn luxury-btn" data-bs-dismiss="modal">
+					Închide
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="mb-5"></div>
+
+
+	<footer class="py-3 mt-auto">
+		<div class="container text-center">
+			<!-- Rând 1 — CONTACT+GDPR+ANPC/SAL -->
+			<div class="d-flex flex-column flex-md-row justify-content-center align-items-center flex-wrap gap-2">
+				<span class="fw-semibold">
+					<i class="fas fa-map-marker-alt me-1"></i>
+					Calea Victoriei 145, București
+				</span>
+
+				<span class="fw-semibold d-none d-md-inline">|</span>
+
+				<span class="fw-semibold">
+					<i class="fas fa-phone me-1"></i>
+					123-456-789
+				</span>
+
+				<span class="fw-semibold d-none d-md-inline">|</span>
+
+				<span class="fw-semibold">
+					<i class="fas fa-envelope me-1"></i>
+					office@CityScapeArtists.com
+				</span>
+
+				<span class="fw-semibold d-none d-md-inline">|</span>
+
+				<span class="fw-semibold">Politica Cookies</span>
+
+				<span class="fw-semibold d-none d-md-inline">|</span>
+
+				<span class="fw-semibold">GDPR</span>
+
+				<span class="fw-semibold d-none d-md-inline">|</span>
+
+				<a href="https://anpc.ro" target="_blank" class="fw-semibold text-decoration-none"
+					style="color: inherit">
+					ANPC
+				</a>
+
+				<span class="fw-semibold d-none d-md-inline">|</span>
+
+				<a href="https://anpc.ro/ce-este-sal/" target="_blank" class="fw-semibold text-decoration-none"
+					style="color: inherit">
+					SAL
+				</a>
+
+				<span class="fw-semibold d-none d-md-inline">|</span>
+
+				<a href="https://ec.europa.eu/consumers/odr" target="_blank" class="fw-semibold text-decoration-none"
+					style="color: inherit">
+					SOL/ODR
+				</a>
+			</div>
+
+			<!-- Rând 2 — Date companie -->
+			<div class="mt-3">
+				<p class="mb-0 fw-semibold text-center">
+					S.C. CITYSCAPE ARTISTS S.R.L. — CUI RO12345678 — J40/1234/2017 — Operator de date cu caracter
+					personal
+					conform legislației în vigoare.
+				</p>
+			</div>
+
+			<!-- Rând 3 — Copyright -->
+			<div class="mt-3">
+				<p class="mb-0 fw-semibold text-center">&copy; 2025 CityScape Artists — Toate drepturile rezervate</p>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+		crossorigin="anonymous">
+	</script>
+<!--Fereastră modală trimitere rezervare-->
+<script>
+document.querySelector("form").addEventListener("submit", function (e) 
+{e.preventDefault();new bootstrap.Modal(document.getElementById("rezervareSucces")).show();});
+</script>
+<!--Dată întoarcere completată automat-->
+<script>
+  const zileInput = document.getElementById("zile");
+  const plecareInput = document.getElementById("plecare");
+  const intoarcereInput = document.getElementById("intoarcere");
+
+  function calculeazaDataIntoarcerii() {
+    const zile = parseInt(zileInput.value);
+    const dataPlecare = plecareInput.value;
+
+    if (!dataPlecare || !zile) {
+      intoarcereInput.value = "";
+      return;
+    }
+
+    const d = new Date(dataPlecare);
+    d.setDate(d.getDate() + (zile - 1));
+
+    let y = d.getFullYear();
+    let m = d.getMonth() + 1;
+    let day = d.getDate();
+
+    if (m < 10) m = "0" + m;
+    if (day < 10) day = "0" + day;
+
+    intoarcereInput.value = y + "-" + m + "-" + day;
+  }
+
+  zileInput.addEventListener("change", calculeazaDataIntoarcerii);
+  plecareInput.addEventListener("change", calculeazaDataIntoarcerii);
+</script>
+
+
+</body>
+
+</html>

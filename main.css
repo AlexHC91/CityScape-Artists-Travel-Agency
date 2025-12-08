@@ -1,0 +1,392 @@
+body {
+	background-color: #0a0620;
+}
+
+/* NAVBAR */
+.navbar {
+	background: linear-gradient(90deg, #3a0057, #1b002b, #2d000f);
+	border-bottom: 1px solid #ffb34740;
+	padding-block: 0.6rem;
+}
+
+.navbar .navbar-brand img {
+	display: block;
+}
+
+.navbar .brand-text {
+	font-size: 1.1rem;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	color: #ffb347;
+	font-weight: 500;
+}
+
+.navbar .brand-text span {
+	color: #ffb347;
+}
+
+.navbar .navbar-nav .nav-link {
+	font-size: 1.5rem;
+	font-weight: 500;
+	color: #ffb347;
+	padding-inline: 1.1rem;
+	position: relative;
+	text-transform: none;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+	color: #ffb347;
+}
+
+.navbar .navbar-nav .nav-link.active {
+	color: #ff5e5e;
+}
+
+.navbar .nav-link i {
+	font-size: 1.3rem;
+	color: #ffb347;
+}
+
+.navbar .nav-link:hover i {
+	color: #ffb347;
+	transform: translateY(-1px);
+	transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.navbar .navbar-toggler-icon {
+	filter: drop-shadow(0 0 4px #00000099);
+}
+
+@media (max-width: 991.98px) {
+	.navbar .navbar-collapse {
+		text-align: center;
+	}
+
+	.navbar .navbar-nav .nav-link {
+		padding-block: 0.3rem;
+	}
+
+	.navbar .navbar-nav:last-child {
+		justify-content: center;
+	}
+}
+
+/* HOME PAGE */
+/* Carduri orașe */
+#Cities .card {
+	background: linear-gradient(135deg, #ffb3471f, #1a0b2b);
+	border: 1px solid #ffb3478c;
+	border-radius: 1rem;
+	color: #f5f5f5;
+	box-shadow: 0 18px 40px #000000bf;
+	overflow: hidden;
+	transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+#Cities .card:hover {
+	transform: translateY(-6px);
+	box-shadow: 0 24px 55px #000000e6;
+}
+#Cities .card-img-top {
+	width: 100%;
+	aspect-ratio: 16 / 9;
+	object-fit: cover;
+	display: block;
+	filter: saturate(1.1) contrast(1.05);
+}
+#Cities .card-title {
+	margin: 1rem 1rem 0.25rem;
+	line-height: 1.25;
+	min-height: 1.6em;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+	color: #ffb347;
+}
+#Cities .card > p.card-text {
+	margin: 0 1rem 1rem;
+	line-height: 1.55;
+	min-height: 6.2em;
+	overflow-wrap: anywhere;
+	color: #f5f5f5d9;
+	text-align: justify !important;
+	text-indent: 1.5rem;
+}
+#Cities .card-body {
+	position: relative;
+	padding: 1.25rem 1.25rem 4.5rem;
+	min-height: 16rem;
+}
+#Cities .card-body ul {
+	margin-bottom: 0.75rem;
+}
+#Cities .card-body strong {
+	display: block;
+	margin-top: 0.5rem;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	letter-spacing: 0.09em;
+	color: #ffb347;
+}
+#Cities .card-body li {
+	font-size: 1.2rem;
+	color: #f5f5f5e6;
+	padding-left: 2.5rem;
+}
+#Cities .card-body .btn {
+	position: absolute;
+	left: 1.25rem;
+	right: 1.25rem;
+	bottom: 1.25rem;
+	width: auto;
+}
+#Cities .card-body .btn.btn-primary {
+	background: linear-gradient(135deg, #ff5e5e, #ffb347);
+	border: none;
+	color: #1a0b2b;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	border-radius: 999px;
+	box-shadow: 0 0 14px #ff5e5ee6;
+	transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+#Cities .card-body .btn.btn-primary:hover {
+	filter: brightness(1.05);
+	transform: translateY(-1px);
+	box-shadow: 0 0 20px #ff5e5eff;
+}
+footer {
+	background: linear-gradient(180deg, #1d1030 0%, #10041b 100%);
+	color: #c6b7ff;
+}
+p {
+	text-align: justify;
+}
+
+/* ABOUT US */
+#about p {
+	color: #d4d4d4;
+	line-height: 1.75;
+}
+#about h3 {
+	color: #f5f5f5;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+}
+#about strong {
+	color: #ffb347;
+}
+#about .card {
+	background-color: #15092b;
+	border-radius: 1rem;
+	border: 1px solid #ffb34773;
+	box-shadow: 0 18px 40px #000000bf;
+	color: #d4d4d4;
+	transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+#about .card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 24px 55px #000000e6;
+}
+#about .card-title {
+	color: #ffb347;
+	letter-spacing: 0.03em;
+}
+
+#about .card-text {
+	color: #d4d4d4;
+	line-height: 1;
+	margin-top: 0.15rem;
+}
+/* REZERVARE */
+#rezervare {
+	background: radial-gradient(90deg, #ffb347, #ff5e62 18%, #1a1035 55%, #050816 100%);
+	color: #f9fafb;
+}
+#rezervare .card {
+	background-color: #1a1035;
+	border: 1px solid #ffb347;
+	box-shadow: 0 16px 40px #000000d9, 0 0 0 1px #ffffff05;
+	color: #f9fafb;
+}
+#rezervare h1.h3 {
+	color: #ffb347;
+	letter-spacing: 0.03em;
+}
+#rezervare p {
+	color: #e5e7eb;
+	opacity: 0.9;
+}
+#rezervare .form-label {
+	color: #e5e7eb;
+	font-weight: 500;
+}
+#rezervare .form-control,
+#rezervare .form-select {
+	background-color: #0f172af9 !important;
+	border: 1px solid #94a3b8b2 !important;
+	color: #f9fafb !important;
+}
+#rezervare .form-control::placeholder,
+#rezervare textarea::placeholder {
+	color: #94a3b8cc;
+}
+#rezervare .form-control:focus,
+#rezervare .form-select:focus {
+	background-color: #0f172aff;
+	border-color: #ffb347;
+	box-shadow: 0 0 0 0.15rem #ffb34773, 0 0 18px #ff5e6280;
+	color: #f9fafb;
+}
+#rezervare .form-check-input {
+	background-color: transparent;
+	border-color: #f9fafb99;
+}
+#rezervare .form-check-input:checked {
+	background-color: #ff5e62;
+	border-color: #ff5e62;
+	box-shadow: 0 0 10px #ff5e62b3;
+}
+#rezervare .form-check-label {
+	color: #e5e7eb;
+}
+#rezervare .btn-primary {
+	background-image: linear-gradient(90deg, #ffb347, #ff5e62);
+	border: 1px solid #ffe796e6;
+	color: #111827;
+	font-weight: 600;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+}
+#rezervare .btn-primary:hover,
+#rezervare .btn-primary:focus {
+	background-image: linear-gradient(90deg, #ffe57f, #ff9f7b);
+	border-color: #ffe57f;
+	color: #050816;
+	box-shadow: 0 0 18px #ffb347e6, 0 0 30px #ff5e62b3;
+}
+#rezervare .small.text-muted.text-center {
+	color: #e5e7eb !important;
+	opacity: 0.7;
+}
+#rezervare .form-control,
+#rezervare .form-select,
+#rezervare textarea.form-control {
+	background-color: #0f172af9 !important;
+	color: #f9fafb !important;
+	border-color: #94a3b8b2 !important;
+}
+
+#rezervare .form-control:focus,
+#rezervare .form-select:focus,
+#rezervare textarea.form-control:focus {
+	background-color: #0f172aff !important;
+	color: #f9fafb !important;
+	border-color: #ffb347 !important;
+	box-shadow: 0 0 10px #ffb34780 !important;
+}
+
+/* Autofill Chrome */
+#rezervare input.form-control:-webkit-autofill,
+#rezervare input.form-control:-webkit-autofill:hover,
+#rezervare input.form-control:-webkit-autofill:focus {
+	-webkit-box-shadow: 0 0 0 1000px #0f172af9 inset !important;
+	-webkit-text-fill-color: #f9fafb !important;
+}
+
+/* TESTIMONIALE */
+#Testimoniale h3 {
+	color: #ffb347;
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+	font-weight: 600;
+}
+.testimonial-card {
+	background: linear-gradient(135deg, #3a0057 0%, #1b002b 40%, #2d000f 100%);
+	border: 1px solid #ffb34740;
+	border-radius: 1.5rem;
+	padding: 2rem;
+	box-shadow: 0 15px 35px #ff5e5e40;
+	color: #ffb347;
+	backdrop-filter: blur(4px);
+	transition: 0.3s ease;
+}
+.testimonial-card:hover {
+	box-shadow: 0 0 30px #ff5e5e8c;
+	transform: translateY(-4px);
+}
+.testimonial-card h4 {
+	color: #ffb347;
+	font-weight: 600;
+	letter-spacing: 0.05rem;
+}
+.testimonial-card p,
+.testimonial-card q {
+	color: #f5f5f5;
+	opacity: 0.9;
+}
+.testimonial-card .badge {
+	background-color: #ff5e5e26;
+	color: #ff5e5e;
+	padding: 0.5rem 1rem;
+	border-radius: 0.75rem;
+	font-size: 0.9rem;
+	letter-spacing: 0.7px;
+}
+.testimonial-card img {
+	border-radius: 1rem;
+	border: 1px solid #ffb34740;
+}
+
+/* FEREASTRĂ MODALĂ */
+.luxury-modal {
+	background: radial-gradient(circle at top, #2c1b47 0%, #15092b 60%, #0a0618 100%);
+	border: 1px solid #ffb347;
+	border-radius: 1.2rem;
+	box-shadow: 0 0 35px #ffb34788;
+}
+
+.luxury-icon-wrap {
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	background: linear-gradient(135deg, #ffb347, #ff5e62);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 0 25px #ffb347cc;
+}
+.luxury-icon {
+	font-size: 42px;
+	color: #15092b;
+}
+.luxury-title {
+	color: #ffb347;
+	letter-spacing: 0.03em;
+	font-size: 1.65rem;
+	font-weight: 600;
+	margin-bottom: 1rem;
+}
+
+.luxury-text-main {
+	color: #ffffff;
+	font-size: 1.18rem;
+	line-height: 1.6;
+	opacity: 0.95;
+	max-width: 600px;
+	margin: 0 auto;
+}
+.luxury-btn {
+	background: linear-gradient(135deg, #ffb347, #ff5e62);
+	border: none;
+	color: #15092b;
+	font-weight: 600;
+	letter-spacing: 0.08em;
+	border-radius: 999px;
+	padding: 0.6rem 2rem;
+	box-shadow: 0 0 15px #ffb347aa;
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.luxury-btn:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 0 25px #ffb347dd;
+}
