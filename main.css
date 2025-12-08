@@ -390,15 +390,9 @@ p {
 	transform: translateY(-2px);
 	box-shadow: 0 0 25px #ffb347dd;
 }
-/*Justify testimoniale doar pe mobil*/
-@media (max-width: 768px) {
-	#Testimoniale p,
-	#Testiomoniale q {
-		text-align: left !important;
-		text-indent: 1rem;
-	}
-	#Testimoniale .testimonial-card .fs-5 {
-		font-size: 1.05rem;
-		line-height: 1.6;
-	}
+/* Testimoniale doar pe mobil*/
+#Testimoniale .testimonial-card p,
+#Testiomoniale .testimonial-card q {
+	text-align: left !important;
+	text-indent: 0 !important;
 }
