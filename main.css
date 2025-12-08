@@ -394,12 +394,7 @@ p {
 @media (max-width: 768px) {
 	#Testimoniale p,
 	#Testiomoniale q {
-		text-align: justify !important;
-		text-justify: inter-word;
-		hyphens: auto;
-	}
-	#Testimoniale .fs-5 {
-		font-size: 1.05 rem;
-		line-height: 1.7;
+		text-align: left !important;
+		text-indent: 0;
 	}
 }
