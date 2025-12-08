@@ -1,4 +1,5 @@
-# 🌆 CityScape Artists — Travel Agency Website  
+# 🌆 CityScape Artists — Travel Agency Website
+
 Front-End Project (HTML, CSS, Bootstrap, JavaScript)
 
 This project was created as the final exam project for the **Front-End Developer certification** at **Atelierele ILBAH**.
@@ -8,25 +9,18 @@ The website features a clean, responsive interface built using HTML, CSS, Bootst
 
 ---
 
-## 🚀 Main Features
+## 🚀 Features
 
-### ✔ Multi-page website
-- **Home Page (index.html)**  
-  - City break offers for Rome, Barcelona, London, Amsterdam, Vienna, Prague  
-  - Responsive cards with included services  
-
-- **About Page (about.html)**  
-  - Mission & values  
-  - “Why choose us” section  
-  - Company overview  
-
-- **Testimonials Page (testimoniale.html)**  
-  - Bootstrap carousel with real testimonials and images  
-
-- **Reservation Page (rezervare.html)**  
-  - Full booking form (contact details, destination, dates, budget, preferences)  
-  - Required field validation  
-  - Confirmation modal triggered with JavaScript  
+- Fully responsive multi-page layout
+- Modern UI with custom CSS styling
+- Bootstrap 5 components:
+  - Carousel
+  - Modal
+  - Grid system
+- Testimonials page with photo carousel
+- Complete reservation form with validation
+- JavaScript-powered confirmation modal
+- Consistent design system across all pages
 
 ---
 
@@ -54,29 +48,30 @@ The website features a clean, responsive interface built using HTML, CSS, Bootst
         ├── Orase/
         ├── Testimoniale/
         └── CityScapeArtists_logo_embedded-svg.svg
+```
 
-🌐 Live Demo
+## 🌐 Live Demo
 
 View the live version of the project here:
 
 👉 https://alexhc91.github.io/CityScape-Artists-Travel-Agency/index.html
 
-🎯 Purpose of the Project
+---
 
-This project was created as the final exam project for the Front-End Developer certification at Atelierele ILBAH.
+## 🎯 Purpose of the Project
+
+This project was created as the final exam project for the **Front-End Developer certification** at **Atelierele ILBAH**.
 
 It demonstrates key front-end development skills:
 
-Creating a responsive multi-page website
+- Creating a responsive multi-page website
+- Using Bootstrap components (carousel, modal, grid system)
+- Custom UI styling with CSS
+- Implementing interactivity with JavaScript
+- Structuring and documenting a real-world front-end project
 
-Using Bootstrap components (carousel, modal, grid system)
+---
 
-Custom UI styling with CSS
+## 📧 Contact
 
-Implementing interactivity with JavaScript
-
-Structuring and documenting a real-world front-end project
-
-📧 Contact
-
-GitHub Profile: https://github.com/alexhc91
+**GitHub Profile:** https://github.com/alexhc91
