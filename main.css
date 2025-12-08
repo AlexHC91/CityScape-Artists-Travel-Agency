@@ -391,12 +391,21 @@ p {
 	box-shadow: 0 0 25px #ffb347dd;
 }
 /* Testimoniale doar pe mobil*/
-#Testimoniale .testimonial-card p,
-#Testiomoniale .testimonial-card q {
-	text-align: justify !important;
-	text-indent: 0 !important;
-	max-width: 85%;
-	margin-left: auto;
-	margin-right: auto;
-	line-height: 1.6;
+@media (max-width: 768px) {
+	#Testimoniale .testimonial-card {
+		padding: 1.5rem 1.25rem;
+	}
+	#Testimoniale .testimonial-card .card-body {
+		padding: 1.25rem 1rem;
+	}
+	#Testimoniale .testimonial-card p.text-start,
+	#Testimoniale .testimonial-card q {
+		text-align: justify !important;
+		text-indent: 0;
+		max-width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+		font-size: 1.05rem;
+		line-height: 1.6;
+	}
 }
