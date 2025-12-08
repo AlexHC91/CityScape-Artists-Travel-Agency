@@ -395,6 +395,11 @@ p {
 	#Testimoniale p,
 	#Testiomoniale q {
 		text-align: justify !important;
-		text-indent: 1.1rem;
+		text-justify: inter-word;
+		hyphens: auto;
+	}
+	#Testimoniale .fs-5 {
+		font-size: 1.05 rem;
+		line-height: 1.7;
 	}
 }
