@@ -395,7 +395,6 @@ p {
 	#Testimoniale p,
 	#Testiomoniale q {
 		text-align: left !important;
-		text-justify: inter-word;
 		text-indent: 1rem;
 	}
 	#Testimoniale .testimonial-card .fs-5 {
