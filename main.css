@@ -398,8 +398,8 @@ p {
 		text-justify: inter-word;
 		text-indent: 1rem;
 	}
-	#Testimoniale .fs-5 {
+	#Testimoniale .testimonial-card .fs-5 {
 		font-size: 1.05rem;
-		line-height: 1.55;
+		line-height: 1.6;
 	}
 }
