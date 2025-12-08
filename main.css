@@ -393,6 +393,6 @@ p {
 /* Testimoniale doar pe mobil*/
 #Testimoniale .testimonial-card p,
 #Testiomoniale .testimonial-card q {
-	text-align: left !important;
+	text-align: center !important;
 	text-indent: 0 !important;
 }
